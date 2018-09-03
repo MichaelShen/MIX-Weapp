@@ -1,0 +1,34 @@
+.mix-navigationbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  height: 44px;
+  box-sizing: content-box;
+  /* border-bottom: 1rpx solid #eee; */
+  /* background-color: #eee; */
+}
+.mix-navigationbar__hd, .mix-navigationbar__ft {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100%;
+  background: #ccc;
+}
+.mix-navigationbar__bd {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  background: #eee;
+}
+.mix-navigationbar__txt {
+  text-overflow: ellipsis;
+}
+.mix-navigationbar__img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

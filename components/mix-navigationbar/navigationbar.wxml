@@ -1,0 +1,14 @@
+<view
+  class="mix-navigationbar"
+  style="padding-top: {{statusBarHeight}}px;"
+>
+  <view class="mix-navigationbar__hd"></view>
+  <view class="mix-navigationbar__bd"></view>
+  <view class="mix-navigationbar__ft"></view>
+  <!-- <image
+     wx:if="{{!!titleImage}}"
+    class="mix-navigationbar__img"
+    src="{{titleImage}}"
+  ></image>
+  <view wx:else>{{titleText}}</view> -->
+</view>
