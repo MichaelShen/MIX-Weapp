@@ -1,0 +1,12 @@
+page {
+  padding-top: 80px;
+}
+.wrapper {
+  padding: 0 10px;
+}
+button {
+  margin-bottom: 20px;
+}
+
+.custom-left {
+}

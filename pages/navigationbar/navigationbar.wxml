@@ -1,0 +1,14 @@
+<mix-navigationbar
+  titleText="{{title}}"
+  showLoading="{{loading}}"
+  customLeft="{{customLeft}}"
+  customTitle="{{customTitle}}"
+>
+  <view slot="left" class="custom-left">返回</view>
+  <view slot="title" class="custom-title">标题</view>
+</mix-navigationbar>
+
+<view class="wrapper">
+  <button bindtap="onTapSetTitle">点击设置title</button>
+  <button bindtap="onTapSetLoading">点击设置loading属性</button>
+</view>

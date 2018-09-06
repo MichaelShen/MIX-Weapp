@@ -1,18 +1,11 @@
-<!--index.wxml-->
-<mix-navigationbar
-  titleText="{{title}}"
-  titleImage=""
-></mix-navigationbar>
-
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="title">MIX Weapp</view>
+  <view class="desc">小程序 UI 组件库</view>
+
+  <view class="component-list">
+    <view class="component-item" data-page="button" bindtap="gotoPage">Button 按钮</view>
+    <view class="component-item" data-page="icon" bindtap="gotoPage">Icon 图标</view>
+    <view class="component-item" data-page="navigationbar" bindtap="gotoPage">NavigationBar 导航栏</view>
+    <view class="component-item" data-page="popup" bindtap="gotoPage">Popup 弹出层</view>
   </view>
 </view>

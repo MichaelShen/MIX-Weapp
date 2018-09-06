@@ -1,0 +1,21 @@
+<view
+  class="mix-navigationbar"
+  style="padding-top: {{statusBarHeight}}px;"
+>
+  <view class="mix-navigationbar__hd">
+    <block wx:if="{{!customLeft}}">
+      <view class="mix-navigationbar__back" bindtap="_onBackTap"></view>
+    </block>
+    <slot wx:else name="left">
+    </slot>
+  </view>
+  <view class="mix-navigationbar__bd">
+    <block wx:if="{{!customTitle}}">
+    <view wx:if="{{showLoading}}" class="mix-navigationbar__loading"></view>
+    <view wx:if="{{titleText}}" class="mix-navigationbar__txt">{{titleText}}</view>
+    </block>
+    <slot wx:else name="title"></slot>
+  </view>
+  <view class="mix-navigationbar__ft">
+  </view>
+</view>
